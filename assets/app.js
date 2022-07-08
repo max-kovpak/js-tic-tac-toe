@@ -204,7 +204,7 @@ class TicTacToe {
 
             const nextPlayer = this.player1 === player ? this.player2 : this.player1;
             const move = {x, y};
-            const [score] = this.minimax(board, depth + 1, nextPlayer, {x, y});
+            const [score] = this.minimax(board, depth + 1, nextPlayer, move);
             board[y][x] = 0;
 
             bestScore = player.isComputer ? Math.max(score, bestScore) : Math.min(score, bestScore);
