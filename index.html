@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tic-Tac-Toe</title>
+    <title>🕹️ Tic-Tac-Toe</title>
 
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,84 +13,22 @@
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
-    <script type="text/javascript" src="assets/app.js" defer></script>
 </head>
 <body class="bg-warning d-flex flex-column h-100">
-<section class="container">
-    <h1 class="text-center">Tic-Tac-Toe</h1>
+    <section class="container text-center">
+        <h1 class="text-center mb-5">🕹️ Tic-Tac-Toe</h1>
+        <a href="vanilla-js">Vanilla JavaScript</a>
+    </section>
 
-    <div class="start-game-form-wrapper">
-        <div class="row justify-content-center">
-            <div class="card" style="width: 40rem;">
-                <div class="card-body text-center">
-                    <form action="#" id="form__select_game_type">
-                        <div class="mb-3 form__game_type">
-                            <button type="button" class="btn btn-primary form__one_player_game">1 Player</button>
-                            <button type="button" class="btn btn-primary form__two_players_game">2 Players</button>
-                        </div>
-                    </form>
-
-                    <form action="#" id="form__enter_player_name" class="hidden">
-                        <div class="mb-3 form__player1_name">
-                            <input class="form-control" type="text" name="name1" placeholder="Player's name"/>
-                        </div>
-                        <div class="mb-3 form__player2_name">
-                            <input class="form-control" type="text" name="name2" placeholder="2nd Player's name"/>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn__start_game">Start Game</button>
-                    </form>
-                </div>
-            </div>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <a target="_blank" href="https://www.linkedin.com/in/max-kovpak/" class="me-4 text-white">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://github.com/max-kovpak/js-tic-tac-toe" class="me-4 text-white">
+                <i class="bi bi-github"></i>
+            </a>
         </div>
-    </div>
-
-    <div class="game__container hidden">
-        <div class="alert alert-info game__welcome_message"></div>
-        <div class="alert alert-info game__result hidden"></div>
-        <div class="row justify-content-center">
-            <div class="card" style="width: 40rem;">
-                <div class="game__container card-body">
-                    <div class="game__row">
-                        <div data-x="0" data-y="0" class="game__cell game__cell_top_left">&nbsp;</div>
-                        <div data-x="1" data-y="0" class="game__cell game__cell_top_center">&nbsp;</div>
-                        <div data-x="2" data-y="0" class="game__cell game__cell_top_right">&nbsp;</div>
-                    </div>
-                    <div class="game__row">
-                        <div data-x="0" data-y="1" data-index="0" class="game__cell game__cell_middle_left">&nbsp;</div>
-                        <div data-x="1" data-y="1" data-index="0" class="game__cell game__cell_middle_center">&nbsp;
-                        </div>
-                        <div data-x="2" data-y="1" data-index="0" class="game__cell game__cell_middle_right">&nbsp;
-                        </div>
-                    </div>
-                    <div class="game__row">
-                        <div data-x="0" data-y="2" data-index="0" class="game__cell game__cell_bottom_left">&nbsp;</div>
-                        <div data-x="1" data-y="2" data-index="0" class="game__cell game__cell_bottom_center">&nbsp;
-                        </div>
-                        <div data-x="2" data-y="2" data-index="0" class="game__cell game__cell_bottom_right">&nbsp;
-                        </div>
-                    </div>
-                </div>
-
-                <div class="game__restart_game_wrapper hidden">
-                    <button class="btn__start_over btn btn-primary">Start over</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer mt-auto py-3 bg-dark">
-    <div class="container text-center">
-        <a target="_blank" href="https://www.linkedin.com/in/max-kovpak/" class="me-4 text-white">
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <a target="_blank" href="https://github.com/max-kovpak/js-tic-tac-toe" class="me-4 text-white">
-            <i class="bi bi-github"></i>
-        </a>
-    </div>
-</footer>
-
+    </footer>
 </body>
 </html>
